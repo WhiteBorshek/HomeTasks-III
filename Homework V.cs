@@ -18,11 +18,9 @@ int Coordinate(string coorName, string pointName)
 double Decision(double ax, double bx, 
                 double ay, double by, 
                 double az, double bz){
-  return Math.Sqrt(Math.Pow((bx-ax), 2) + 
+return Math.Sqrt(Math.Pow((bx-ax), 2) + 
                    Math.Pow((by-ay), 2) + 
                    Math.Pow((bz-az), 2));
 }
-
 double segmentLength =  Math.Round (Decision(ax, bx, ay, by, az, bz), 2 );
-
 Console.WriteLine($"Длина отрезка  {segmentLength}");
